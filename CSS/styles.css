@@ -98,7 +98,7 @@ p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0;
     font-size: large;
-    color: orange;
+    color: rgb(255, 115, 0);
 }
 
 .textLogin:hover{
