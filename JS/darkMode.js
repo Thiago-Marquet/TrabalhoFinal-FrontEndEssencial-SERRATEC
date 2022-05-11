@@ -1,9 +1,29 @@
+const darkModeStart = () =>{
+   let darkModeStatus = localStorage.getItem("darkModeStatus")
+   
+   if (darkModeStatus == "1") {
+      darkModeActive()
+   }
+}
+
 const darkMode = () =>{
-    darkModeBody();
-    darkModeMain();
-    darkModeNav();
-    darkModeFooter();
-    darkModeHeader(); 
+   let darkModeStatus = localStorage.getItem("darkModeStatus")
+
+   if (darkModeStatus == "1") {
+      localStorage.setItem("darkModeStatus", "0")
+   } else {
+      localStorage.setItem("darkModeStatus", "1")
+   }
+
+   darkModeActive()
+}
+
+const darkModeActive = () =>{
+      darkModeBody();
+      darkModeMain();
+      darkModeNav();
+      darkModeFooter();
+      darkModeHeader();
 }
 
 const darkModeMain = () => {
@@ -31,3 +51,4 @@ const darkModeNav = () => {
    element.classList.toggle("dark-mode-all");
 }
 
+darkModeStart()

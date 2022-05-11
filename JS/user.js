@@ -1,6 +1,6 @@
-let user = localStorage.getItem("user")
+const login = () =>{
+    let user = localStorage.getItem("user")
 
-function login(user) {
     if (user) {
         document.getElementById("txtUser").innerHTML=user;
         document.getElementById("txtLogin").innerHTML="Sair";
@@ -9,4 +9,4 @@ function login(user) {
     }
 }
 
-login(user)
+login()
