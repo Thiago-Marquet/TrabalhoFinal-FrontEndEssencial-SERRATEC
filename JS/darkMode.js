@@ -3,6 +3,7 @@ const darkMode = () =>{
     darkModeMain();
     darkModeNav();
     darkModeFooter();
+    darkModeHeader(); 
 }
 
 const darkModeMain = () => {
@@ -24,4 +25,9 @@ const darkModeNav = () => {
     let element = document.querySelector("nav");
     element.classList.toggle("dark-mode-nav");
  }
+
+ const darkModeHeader = () => {
+   let element = document.querySelector("header");
+   element.classList.toggle("dark-mode-all");
+}
 
