@@ -212,13 +212,22 @@ p{
 }
 
 
-@media(win-width:768px){
+@media(min-width:768px){
     #link-container{
         text-align: left;
     }
     .btn.btn-primary{
         margin-bottom: 30px;
     }
+}
+
+@media(max-width:480px){
+
+    .logo-footer{
+        width: 50%;
+        height: 50%;
+    }
+
 }
 
 #form-container .form-control{
