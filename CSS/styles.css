@@ -265,21 +265,3 @@ p{
     }
 
 }
-
-@media(min-width:320px){
-    
-    .navbar-toggler{
-        padding: 10px;
-        padding-left: 10px;
-        padding-right: 35px;
-        width: 16%;
-        height: 50%;
-    }
-
-    .icon-nav-toggler{
-        width: 80%;
-        height: 100%;
-    }
-
-    
-}
