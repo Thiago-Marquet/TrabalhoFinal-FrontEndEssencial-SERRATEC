@@ -155,7 +155,7 @@ p{
 
 .logo-footer{
     width: 90%;
-    height: 25%;
+    height: 30%;
 }
 
 .logo-header{
@@ -211,25 +211,6 @@ p{
     border-color: #222;
 }
 
-
-@media(min-width:768px){
-    #link-container{
-        text-align: left;
-    }
-    .btn.btn-primary{
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width:480px){
-
-    .logo-footer{
-        width: 50%;
-        height: 50%;
-    }
-
-}
-
 #form-container .form-control{
     border: none;
     border-bottom: 1px solid rgb(243, 243, 243);
@@ -241,4 +222,64 @@ p{
 
 .form-floating label{
     color: #bbb;
+}
+
+/* MEDIAS */
+
+@media(min-width:768px){
+    #link-container{
+        text-align: left;
+    }
+    .btn.btn-primary{
+        margin-bottom: 30px;
+    }
+
+    .logo-footer{
+        width: 100%;
+        height: 15%;
+    }
+}
+
+@media(max-width:480px){
+
+    .logo-footer{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media(min-width:1400px){
+
+    .logo-footer{
+        width: 90%;
+        height: 40%;
+    }
+
+}
+
+@media(min-width:1024px){
+
+    .logo-footer{
+        width: 90%;
+        height: 25%;
+    }
+
+}
+
+@media(min-width:320px){
+    
+    .navbar-toggler{
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 35px;
+        width: 16%;
+        height: 50%;
+    }
+
+    .icon-nav-toggler{
+        width: 80%;
+        height: 100%;
+    }
+
+    
 }
