@@ -8,9 +8,10 @@ const darkModeStart = () =>{
 
 const darkMode = () =>{
    let darkModeStatus = localStorage.getItem("darkModeStatus")
-
+   
    if (darkModeStatus == "1") {
       localStorage.setItem("darkModeStatus", "0")
+      
    } else {
       localStorage.setItem("darkModeStatus", "1")
    }
@@ -28,7 +29,7 @@ const darkModeActive = () =>{
 
 const darkModeMain = () => {
     let element = document.querySelector("main")
-    element.classList.toggle("dark-mode-all");
+    element.classList.toggle("dark-mode-main");
  }
 
  const darkModeBody = () => {

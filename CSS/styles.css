@@ -4,13 +4,18 @@ body{
 }
 
 main{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(231, 231, 231);
 }
 
 
 /* CSS DARKMODE */
 .dark-mode-all{
     background-color: rgb(46, 46, 46);
+    color: azure;
+}
+
+.dark-mode-main{
+    background-color: rgb(71, 71, 71);
     color: azure;
 }
 
@@ -29,22 +34,32 @@ main{
 .btn-darkMode{
     background-color: #303030;
     border-radius: 50px;
+    margin-right: 25px;
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
 .btn-darkMode:hover{
+    transition: 0.25s;
     background-color: #303030;
-    border-color: rgb(255, 162, 0);
+    border-color: rgb(0, 0, 0);
+    opacity: 1;
 }
 
 .btn-darkMode:focus{
     background-color: #303030;
-    border-color: rgb(255, 162, 0);
+    border-color: none;
 }
 
 
 /* CSS NAVBAR/HEADER */
 header{
-    background-color: #ffffff;
+    background-color: rgb(211, 211, 211);
+}
+
+#txtUser{
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .navbar-toggler {
@@ -84,7 +99,7 @@ p{
 }
 
 .textNav:hover{
-    color: rgb(85, 85, 85);
+    color: rgb(64, 64, 64);
 }
 
 .span-dark{
@@ -98,11 +113,16 @@ p{
     font-size: large;
 }
 
+.textFale{
+    border-right: none;
+}
+
 .textLogin{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0;
     font-size: large;
     color: rgb(255, 115, 0);
+    margin-right: 30px;
 }
 
 .textLogin:hover{
@@ -116,6 +136,18 @@ p{
 
 
 /* CSS FOTOS E ICONES */
+.icon-nav-toggler{
+
+    height:30px;
+    width:30px;
+
+}
+
+.icon-dark{
+    height: 25px;
+    width: 25px;
+}
+
 .foto-noticia{
     width: 300px;
     height: 200px;

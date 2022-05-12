@@ -5,10 +5,17 @@ const menssagem = document.querySelector("#form-message");
 
 
 const alertForm = () =>{
-    alert(nome.value + ", o seu formulário foi enviado com sucesso!");
-    console.log(nome.value);
-    console.log(email.value);
-    console.log(menssagem.value);
+    let nulo = "";
+    
+    if(nome.value != nulo && email.value != nulo && menssagem.value != nulo){
+        alert(nome.value + ", o seu formulário foi enviado com sucesso!");
+        console.log(nome.value);
+        console.log(email.value);
+        console.log(menssagem.value);
+    }
+    else{
+        alert("Prencha todos os campos antes de enviar");
+    }
 }
 
 btnForm.addEventListener('click', alertForm);

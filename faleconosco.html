@@ -20,7 +20,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="assets\logo.png" alt="" class="logo-header"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
+                 <span class="navbar-toggler-icon" id="btn-expande"><img class="icon-nav-toggler"src="assets\nav-toggler-icon.png" alt="" srcset=""></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -31,14 +31,14 @@
                         <a class="nav-link textHeader" href="sobre.html"><span class="textNav">Sobre</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link textHeader" href="faleconosco.html"><span class="textNav text-black">Fale Conosco</span></a>
+                        <a class="nav-link textHeader textFale" href="faleconosco.html"><span class="textNav text-black">Fale Conosco</span></a>
                     </li>                  
                     </ul>
                     <div>
-                        <text id="txtUser"></text>
+                        <button onclick="darkMode()" class="btn-darkMode btn-dark btn-sm"><img src="assets\darkmode-icon.png" alt="" class="icon-dark"></button>
                     </div>
                     <div>
-                        <button onclick="darkMode()" class="btn-darkMode btn-dark btn-sm">DarkMode</button>
+                      <text id="txtUser" class="text-black font-weight-bold"></text>
                     </div>
                     <div>
                         <a class="nav-link textLogin" href="login.html"><img src="assets\login-icon.png" alt=""> <text id="txtLogin"></text>
@@ -49,7 +49,7 @@
         </nav>
     </header>
 
-    <main class="container" id="main">
+    <main class="container shadow-lg" id="main">
         <br>
         <h1 class="border-bottom">Fale Conosco</h1>
         <br>
@@ -68,7 +68,7 @@
                 <textarea id="form-message" class="input form-control" name="message" rows="7" cols="25" maxlength="400"></textarea><br />
             </div>
                 <br>          
-                <input class="btn-light btn-sm" type="button" value="Enviar" id="btn-form">
+                <input class="btn-light btn-sm mb-4" type="button" value="Enviar" id="btn-form">
         </form>
     </main>
     
